@@ -1,0 +1,5 @@
+(define-macro (until COND EXPR ...)
+  #'(let loop ()
+      (unless COND
+        EXPR ...
+        (loop))))
