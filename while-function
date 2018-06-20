@@ -1,0 +1,6 @@
+
+(define-macro (while COND EXPR ...)
+  #'(let loop ()
+      (when COND
+        EXPR ...
+        (loop))))
