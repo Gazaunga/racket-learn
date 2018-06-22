@@ -1,1 +1,10 @@
-(system "ls")
+#lang racket
+(require racket/cmdline)
+
+(define lister-helper
+  (command-line
+   #: program "Lister"
+   #: once-each
+   [("-l" "--list") "List the home directory"
+                       (system "ls -a ~/")]
+))
