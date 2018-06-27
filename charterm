@@ -1,0 +1,10 @@
+#lang racket/base
+ 
+(require charterm)
+ 
+(with-charterm
+ (charterm-clear-screen)
+ (charterm-cursor 0 0)
+ (let ((key (charterm-read-key)))
+   (charterm-clear-line)
+   (printf "You pressed: ~S\r\n" key)))
