@@ -4,7 +4,7 @@
  
 (with-charterm
  (charterm-clear-screen)
- (charterm-cursor 0 0)
+ (charterm-cursor 40 0)
+ (charterm-display "Welcome to Anther: The Pollen Editor")
  (let ((key (charterm-read-key)))
-   (charterm-clear-line)
-   (printf "You pressed: ~S\r\n" key)))
+   (charterm-clear-line)))
