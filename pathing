@@ -5,3 +5,8 @@
 
 ;; equivalent of Dir.home
 (find-system-path 'home-dir)
+
+;; home function assigned to variable 'home'
+(define home
+  [find-system-path 'home-dir])
+(print home)
