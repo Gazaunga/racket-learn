@@ -1,0 +1,7 @@
+#lang racket
+
+;; equivalent of 'which'
+(find-executable-path "yum")
+
+;; equivalent of Dir.home
+(find-system-path 'home-dir)
