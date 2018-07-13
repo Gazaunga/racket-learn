@@ -1,0 +1,4 @@
+#lang racket
+
+;; equivalent of 'which'
+(find-executable-path "yum")
