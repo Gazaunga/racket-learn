@@ -1,0 +1,5 @@
+(module module-name which-expander
+   42        ; the body of the module
+   "foobar"  ; contains expressions
+   (+ 1 1)   ; to expand & evaluate
+   ···)
