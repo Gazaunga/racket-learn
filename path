@@ -1,0 +1,5 @@
+#lang racket
+
+(define home
+  [find-system-path 'home-dir])
+(print home)
