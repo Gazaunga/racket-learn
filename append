@@ -1,0 +1,5 @@
+#lang racket
+(define hello
+  (lambda (name)
+    (string-append "Hello " name)))
+(hello "Steve") ; => "Hello Steve"
