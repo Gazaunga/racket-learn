@@ -2,3 +2,11 @@
 
 ;; (define user-input (read-line (current-input-port) 'any))
 ;; (display user-input)
+
+;; OR
+
+(display "Please enter your name: ")
+(define name (read-line))
+(display "Hello, ")
+(display name)
+(newline)
