@@ -1,0 +1,4 @@
+(read-line (current-input-port) 'any)
+
+;; (define user-input (read-line (current-input-port) 'any))
+;; (display user-input)
